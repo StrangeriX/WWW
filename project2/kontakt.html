@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>strangerix</title>
+	<link rel="stylesheet" href="css/fontello-c66c2cb1/css/fontello.css">
+	<link rel="stylesheet" href="css/fontello-8e5f693c/css/fontello.css">
+</head>
+
+<body>
+	<div class="wraper">
+		<div class="header">
+			<em class="icon-facebook"></em>
+			<em class="icon-instagram"></em>
+			<header>
+				<h1>Poradniki do The Elder Scrolls Online</h1>
+			</header>
+		</div>
+		<nav>
+			<div class="main-menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="news.html">Aktualizacje</a></li>
+					<li>Poradniki
+						<ul>
+							<li><a href="podstawy.html">Podstawy</a></li>
+							<li><a href="mechaniki.html">Mechaniki</a></li>
+							<li><a href="trading.html">Trading</a></li>
+							<li><a href="triale.html">Triale</a></li>
+							<li><a href="addony.html">Addony</a></li>
+							<li><a href="rotacja.html">Rotacja</a></li>
+						</ul>
+					</li>
+					<li><a href="galeria.html">Galeria</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<form class="form" id="contact">
+		<div class="form-row">
+			<label for="field-name">Name*</label>
+			<input type="text" name="name" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+		</div>
+		<div class="form-row">
+			<label for="field-email">Email*</label>
+			<input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+		</div>
+		<div class="form-row">
+			<label for="field-message">Message*</label>
+			<textarea name="message" required data-error="Musisz wypełnić pole" id="field-message"></textarea>
+		</div>
+		<div class="form-row">
+			<label class="checkbox-cnt">
+				<input type="checkbox" required data-error="Musisz wypełnić pole" name="regulation">
+				<em class="state" aria-hidden="true"></em>
+				<span>Wyrażam zgodę na przetwarzanie danych et cetera.*</span>
+			</label>
+		</div>
+		<div class="form-row">
+			<button type="submit" class="submit-btn">
+				Wyślij
+			</button>
+		</div>
+	</form>
+	<script src="check.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<div class="container col-sm-6">
+		<div class="row">
+			<h2>Mój slider</h2>
+				<div class="slider-outer">
+						<img src="./assets/images/arrow-left.png" class="prev" alt="Prev">
+						<div class="slider-inner">
+								<img src="./assets/images/galeria/Screenshot_20190626_095649-min.png" class="active" alt='Mój najwyższy pomiar DPS'>
+								<img src="./assets/images/galeria/Screenshot_20190626_212416-min.png" alt="event urodziwnowy">
+								<img src="./assets/images/galeria/Screenshot_20190630_130808-min.png" alt="Nowy kostium">
+								<img src="./assets/images/galeria/Screenshot_20190718_210801-min.png" alt="wspólnie skończone vMoL">
+						</div>
+						<img src="./assets/images/arrow-right.png" class="next" alt="Next">
+				</div>
+				<span id='comment'></span>
+		</div>
+</div>
+<div class="row">
+	<h2>Slider z pluginu<br></h2>
+		<div id="slider"></div>
+		<script type="text/javascript" src="./vendor/cubeSlider/build/slider.bundle.js"></script>
+		<script defer type="text/javascript">
+		$('#slider').css({
+			width: `600px`,
+			height: `400px`,
+		})
+
+		const slider = new Slider({
+				$,
+				$container: $('#slider'),
+				slides: [
+						'./assets/images/galeria/Screenshot_20190626_095649-min.png',
+						'./assets/images/galeria/Screenshot_20190626_212416-min.png',
+						'./assets/images/galeria/Screenshot_20190630_130808-min.png',
+						'./assets/images/galeria/Screenshot_20190718_210801-min.png'
+				],
+				slideshow: 		true,
+				timeout: 			6000,
+				timeOnScreen: 4000,
+				rows: 				10,
+				columns: 			10
+		})
+		</script>
+		<script src="./assets/js/galeria.js"></script>
+</div>

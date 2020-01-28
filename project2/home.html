@@ -1,0 +1,53 @@
+<div class="col-sm-12">
+	<article>
+		<h2>Witam na mojej stronie poświęconej grze The Elder Scrolls Online.</h2>
+		<p><br>Chciałbym podzielić się z wami moimi doświadczeniami w grze, pokazać podstawowe mechaniki oraz ciekawostki, które mogą wam się przydać w codziennych zmaganiach z grą.</p>
+		<p>Opanowanie podstaw to niezwykła pięta achillesowa wielu początkujących graczy. Gra jest wręcz naszpikowana przeróżnymi mechanizmami, które mogą na początku sprawiać nie lada problemy.
+			Moje poradniki obejmują zarówno podstawy gry, użyteczne addony jak również omówienie niektórych triali.
+			<br>Serdecznie zapraszam do przejrzenia zawartości. W razie pytań lub niejasności proszę o kontakt poprzez formularz kontaktowy.
+		</p>
+	</article>
+	<div class='row'>
+		<div id='video' class="col-sm-12">
+			<video controls>
+				<source src="./assets/videos/teso_1.mp4" type="video/mp4">
+				<source src="./assets/videos/teso_2.ogg" type="video/ogg">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">contact Form</h3>
+		</div>
+		<form class="form" id="contactForm" method="post" novalidate action="/send-script.php">
+			<div class="form-row">
+				<label for="field-name">Name*</label>
+				<input type="text" name="name" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+			</div>
+			<div class="form-row">
+				<label for="field-email">Email*</label>
+				<input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+			</div>
+			<div class="form-row">
+				<label for="field-message">Message*</label>
+				<textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
+			</div>
+			<div class="form-row">
+				<label class="checkbox-cnt">
+					<input type="checkbox" required data-error="Musisz wypełnić pole" name="regulation">
+					<i class="state" aria-hidden="true"></i>
+					<span>Be with us and accept our policy</span>
+				</label>
+			</div>
+			<div class="form-row">
+				<button type="submit" class="submit-btn">
+					Wyślij
+				</button>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="./assets/js/validation.js"></script>
+</div>
+<footer>By StrangeriX. Wszelkie prawa zastrzeżone </footer>
